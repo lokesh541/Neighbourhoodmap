@@ -1,0 +1,24 @@
+{
+  "name": "Neighborhoodmap",
+  "authors": [
+    "Lokesh <lrbeeram@gmail.com>"
+  ],
+  "description": "a single-page application featuring a map of your neighborhood or a neighborhood you would like to visit",
+  "main": "index.html",
+  "keywords": [
+    "neighbourhoodmap"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "knockout": "^3.4.0"
+  }
+}

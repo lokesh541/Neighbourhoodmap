@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+    <div class="container-fluid">
+        <div class="options-box">
+            <h1>Find Your New NYC Home</h1>
+            <div>
+                <input data-bind = "textInput: filter"  type="text" placeholder="filter location" class="form-control">
+                <!-- <input id="hide-listings" type="button" value="Hide Listings"> -->
+            </div>
+            <div>
+                
+                <ul data-bind="foreach: filterList" class="list-unstyled">
+                    <li id="location-name"><span data-bind="text: title, click: showInfo"> </span></li>
+                </ul>    
+        </div>
+        <div id="map"></div>
+    </div>
+
+    <script src = "bower_components/jquery/dist/jquery.min.js"></script>
+    <script  src="bower_components/knockout/dist/knockout.js"></script>
+
+    <script src="js/index.js"></script>
+    <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOOHMUDfl0OhZjIc9TTRG4JrNUI2xVwK0&v&v=3&callback=initMap">
+    </script>
+    </script>
+</body>
+
+</html>
